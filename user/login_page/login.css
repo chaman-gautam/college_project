@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-image: url(./images/download5.jpeg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+/* opacity: .9; */
+}
+.login{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container .icon-close{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(172, 192, 243);
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    z-index: 1;
+    justify-content: center;
+    overflow: hidden;
+    height: 2rem;
+    width: 2rem;
+}
+.login-container{
+    height: 28rem;
+    width: 25rem;
+    /* border: 2px solid black; */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    /* background-color: rgb(188, 200, 211) ; */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-login{
+    font-size: 2rem;
+}
+#u_pass,#u_mail{
+    width: 100%;
+    /* border: 0px 0px .1rem 0px; */
+}
+.input-data input{
+    border: none;
+    border-bottom: 2px solid black;
+    
+    height: 2rem;
+    margin: .5rem 0px;
+    background: transparent;
+    outline: none;
+    padding: 0px .1rem;
+    border-left: 1px solid black transparent;
+    border-right: 1px solid black transparent;
+    /* border: 0px 1px 2px 1px solid black; */
+    font-size: .9rem;
+    /* pointer-events: none; */
+    /* background-color: rgb(188, 200, 211) ; */
+}
+.label-data label{
+    margin: .5rem 0px;
+    /* margin-bottom: 1rem; */
+    /* position: absolute; */
+    /* bottom: 100px; */
+    font-size: 1.2rem;
+    opacity: .8;
+    /* transform: translatey(50%); */
+}
+/* .input-data input:focus{ */
+    /* top: -10px; */
+    /* position:relative;
+    bottom: 20px; */
+    /* position: absolute; */
+    /* margin-top: -.5rem; */
+    /* border-left: 1px solid black; */
+    /* border-right: 1px solid black; */
+/* } */
+.login-details{
+    height: 70%;
+    width: 90%;
+}
+.remember-forgot{
+    margin: .5rem 0px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    opacity: .7;
+    justify-content: space-between;
+}
+#forgot-pass{
+    text-decoration: none;
+    color: red;
+}
+#u_login{
+    margin: 1.5rem 0px;
+    height: auto;
+    width: 100%;
+    padding: .5rem 0px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+    background-color: rgb(9, 70, 124);
+}
+#u_login:hover{
+    background-color: rgb(58, 87, 201);
+    transition: ease-in-out 1s;
+}
+.dont-account{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    opacity: .8;
+    cursor: pointer;
+    justify-content: center;
+}

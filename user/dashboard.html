@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <span>Wanderlust Adventures</span>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search destinations, packages..." autocomplete="off">
+                <i class="fas fa-search"></i>
+                <div id="autocompleteResults" class="autocomplete-items"></div>
+            </div>
+            
+            <div class="header-right">
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@wanderlust.com</span>
+                </div>
+                
+                <div class="settings-dropdown">
+                    <div class="settings-icon" onclick="toggleDropdown()">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div id="settingsDropdown" class="dropdown-content">
+                        <a href="#"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-bg">
+            <div class="bg-img img1"></div>
+            <div class="bg-img img2"></div>
+            <div class="bg-img img3"></div>
+            <div class="bg-img img4"></div>
+        </div>
+        <div class="profile-overlay"></div>
+        <div class="profile-content">
+            <div class="profile-photo"></div>
+            <h1 class="profile-title">Your Adventure Starts Here</h1>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="recent-visits">
+                    <h3 class="sidebar-title">Recent Visits</h3>
+                    <div id="recentVisitsList">
+                        <!-- Visits will be populated here -->
+                    </div>
+                </div>
+                
+                <div class="photo-gallery-section">
+                    <h3 class="sidebar-title">Photo Gallery</h3>
+                    <div class="photo-gallery" id="photoGallery">
+                        <!-- Gallery images will be populated here -->
+                    </div>
+                </div>
+            </aside>
+            
+            <!-- Content Area -->
+            <div class="content-area">
+                <section class="tour-packages">
+                    <h2 class="section-title">Popular Tour Packages</h2>
+                    <div class="packages-grid" id="packagesGrid">
+                        <!-- Tour packages will be populated here -->
+                    </div>
+                </section>
+                
+                <section class="events-section">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <div class="events-list" id="eventsList">
+                        <!-- Events will be populated here -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Adventure Street, Travel City</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 234 567 890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@wanderlust.com</span>
+                    </div>
+                </div>
+                
+                <div class="footer-column quick-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p style="margin-top: 20px;">Subscribe to our newsletter for exclusive deals and travel tips.</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Wanderlust Adventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="./dashboard.js"></script>
+    
+</body>
+</html>

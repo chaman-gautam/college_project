@@ -1,0 +1,7 @@
+.login-container{
+height: min-content;
+padding: 1rem 0px 1rem 0px;
+}
+.input-data input{
+    width: 100%;
+}
